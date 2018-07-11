@@ -10,10 +10,8 @@ namespace XFwMvx.Core.ViewModels
     public class MainViewModel : MvxViewModel
     {
         private IContactService ContactService { get;  }
-        private IMvxNavigationService NavigationService { get; }
-        public MainViewModel(IMvxNavigationService navigationService, IContactService contactService)
+        public MainViewModel(IContactService contactService)
         {
-            NavigationService = navigationService;
             ContactService = contactService;
         }
 
